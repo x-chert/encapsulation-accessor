@@ -1,0 +1,20 @@
+{
+	"name": "xchert/encapsulation-accessor",
+	"authors": [
+		{
+			"name": "Dustin Simon"
+		}
+	],
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Xchert\\PropertyAccess\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^8.3",
+		"xchert/util": "v1.0.0-RC1",
+		"xchert/encapsulation": "v1.0.0-RC1",
+		"xchert/property-access": "v1.0.0-RC1"
+	}
+}
