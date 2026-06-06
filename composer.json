@@ -1,5 +1,6 @@
 {
 	"name": "xchert/encapsulation-accessor",
+	"type": "library",
 	"authors": [
 		{
 			"name": "Dustin Simon"
@@ -13,8 +14,8 @@
 	},
 	"require": {
 		"php": "^8.3",
-		"xchert/util": "v1.0.0-RC1",
-		"xchert/encapsulation": "v1.0.0-RC1",
-		"xchert/property-access": "v1.0.0-RC1"
+		"xchert/util": "~1.0.0@RC",
+		"xchert/encapsulation": "~1.0.0@RC",
+		"xchert/property-access": "~1.0.0@RC"
 	}
 }
