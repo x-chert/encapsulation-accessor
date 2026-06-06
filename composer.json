@@ -1,5 +1,6 @@
 {
 	"name": "xchert/encapsulation-accessor",
+	"type": "library",
 	"authors": [
 		{
 			"name": "Dustin Simon"
