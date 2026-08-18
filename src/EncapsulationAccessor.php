@@ -64,7 +64,7 @@ class EncapsulationAccessor extends Accessor
             $data->set($field, $value);
         } catch(PropertyNotExistsException|NotAllowedFieldException $e) {
             if($context->hasFlags(Flags::STRICT)) {
-                throw $e;
+                throw new PropertyNotFoundException($context->getPath());
             }
         }
     }
@@ -84,5 +84,12 @@ class EncapsulationAccessor extends Accessor
     public function collect(mixed $data, AccessContext $context): array
     {
         throw new OperationNotSupportedException(Operation::Collect);
+    }
+
+    public function merge(mixed &$data, mixed $value, AccessContext $context): void
+    {
+        Type::validate($data, Encapsulation::class);
+
+        parent::merge($data, $value, $context);
     }
 }
