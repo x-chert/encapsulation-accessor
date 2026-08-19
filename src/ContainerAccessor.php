@@ -104,7 +104,7 @@ class ContainerAccessor extends Accessor
             return;
         }
 
-        $data->splice($field, 1, $value);
+        $data->splice($field, 1, [$value]);
     }
 
     /**
@@ -162,6 +162,8 @@ class ContainerAccessor extends Accessor
      */
     public function merge(mixed &$data, mixed $value, AccessContext $context): void
     {
+        Type::validate($data, MutableContainer::class);
+
         $index = -1;
 
         /**
