@@ -1,3 +1,9 @@
+# v1.0.1
+### Other
+
+* [#9 - Fix changelog](https://github.com/x-chert/encapsulation-accessor/pull/9)
+
+
 # v1.0.0
 
 ### Documentation
