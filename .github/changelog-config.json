@@ -2,15 +2,29 @@
 	"categories": [
 		{
 			"title": "### New features",
-			"labels": ["feature", "enhancement"]
+			"labels": [
+				"feature",
+				"enhancement"
+			]
 		},
 		{
 			"title": "### Bugfixes",
-			"labels": ["bug", "fix"]
+			"labels": [
+				"bug",
+				"bugfix"
+			]
+		},
+		{
+			"title": "### Documentation",
+			"labels": [
+				"documentation"
+			]
 		},
 		{
 			"title": "### Other",
-			"labels": ["chore", "documentation", "dependencies"]
+			"labels": [
+				"devops"
+			]
 		}
 	],
 	"template": "# #{{TO_TAG}}\n#{{CHANGELOG}}",
